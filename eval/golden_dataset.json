@@ -1,0 +1,10 @@
+[
+  {
+    "question": "What is the return policy?",
+    "expected_answer": "The return policy allows returns within 30 days of purchase with a valid receipt."
+  },
+  {
+    "question": "How do I reset my password?",
+    "expected_answer": "You can reset your password by clicking the 'Forgot Password' link on the login page."
+  }
+]
