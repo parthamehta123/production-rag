@@ -1,7 +1,7 @@
 """Hybrid retriever: combines BM25 keyword search with vector semantic search."""
 
 from dotenv import load_dotenv
-from langchain_community.vectorstores import Chroma
+from langchain_chroma import Chroma
 from langchain_openai import OpenAIEmbeddings
 from rank_bm25 import BM25Okapi
 from sentence_transformers import CrossEncoder

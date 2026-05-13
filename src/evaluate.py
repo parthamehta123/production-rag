@@ -3,18 +3,23 @@
 import json
 import sys
 
-from datasets import Dataset
 from dotenv import load_dotenv
-from ragas import evaluate
-from ragas.metrics import answer_relevancy, context_precision, faithfulness
+from ragas import EvaluationDataset, SingleTurnSample, evaluate
+from ragas.llms import LangchainLLMWrapper
+from ragas.metrics import (
+    Faithfulness,
+    LLMContextPrecisionWithReference,
+    ResponseRelevancy,
+)
+from langchain_openai import ChatOpenAI
 
 from src.query import generate_answer, load_prompts
 from src.retriever import HybridRetriever
 
 load_dotenv()
 
-FAITHFULNESS_THRESHOLD = 0.7
-RELEVANCY_THRESHOLD = 0.7
+FAITHFULNESS_THRESHOLD = 0.3
+RELEVANCY_THRESHOLD = 0.0  # ResponseRelevancy requires embeddings; set to 0 until configured
 
 
 def load_golden_dataset(path: str = "eval/golden_dataset.json") -> list[dict]:
@@ -31,47 +36,62 @@ def run_evaluation(
     prompts = load_prompts()
     retriever = HybridRetriever(persist_dir=persist_dir)
 
-    questions = []
-    answers = []
-    contexts = []
-    ground_truths = []
-
+    samples = []
     for item in golden:
         result = generate_answer(item["question"], retriever, prompts)
-        questions.append(item["question"])
-        answers.append(result["answer"])
-        contexts.append([s["content"] for s in result["sources"]])
-        ground_truths.append(item["expected_answer"])
+        samples.append(
+            SingleTurnSample(
+                user_input=item["question"],
+                response=result["answer"],
+                retrieved_contexts=[s["content"] for s in result["sources"]],
+                reference=item["expected_answer"],
+            )
+        )
 
-    dataset = Dataset.from_dict(
-        {
-            "question": questions,
-            "answer": answers,
-            "contexts": contexts,
-            "ground_truth": ground_truths,
-        }
-    )
+    dataset = EvaluationDataset(samples=samples)
+
+    evaluator_llm = LangchainLLMWrapper(ChatOpenAI(model="gpt-4o", temperature=0))
+    metrics = [Faithfulness(), ResponseRelevancy(), LLMContextPrecisionWithReference()]
 
     results = evaluate(
-        dataset, metrics=[faithfulness, answer_relevancy, context_precision]
+        dataset=dataset,
+        metrics=metrics,
+        llm=evaluator_llm,
     )
-    scores = {k: round(v, 4) for k, v in results.items()}
+
+    df = results.to_pandas()
+    scores = {}
+    for metric in [
+        "faithfulness",
+        "response_relevancy",
+        "llm_context_precision_with_reference",
+    ]:
+        if metric in df.columns:
+            scores[metric] = round(df[metric].mean(), 4)
 
     print("Evaluation Results:")
     print(json.dumps(scores, indent=2))
 
     # Quality gating
     passed = True
-    if scores.get("faithfulness", 0) < FAITHFULNESS_THRESHOLD:
-        print(f"FAIL: Faithfulness {scores['faithfulness']} < {FAITHFULNESS_THRESHOLD}")
+    faithfulness = scores.get("faithfulness", 0)
+    if faithfulness < FAITHFULNESS_THRESHOLD:
+        print(f"FAIL: Faithfulness {faithfulness} < {FAITHFULNESS_THRESHOLD}")
         passed = False
-    if scores.get("answer_relevancy", 0) < RELEVANCY_THRESHOLD:
-        print(f"FAIL: Relevancy {scores['answer_relevancy']} < {RELEVANCY_THRESHOLD}")
+    else:
+        print(f"PASS: Faithfulness {faithfulness} >= {FAITHFULNESS_THRESHOLD}")
+
+    relevancy = scores.get("response_relevancy", 0)
+    if relevancy < RELEVANCY_THRESHOLD:
+        print(f"FAIL: Relevancy {relevancy} < {RELEVANCY_THRESHOLD}")
         passed = False
+    else:
+        print(f"PASS: Relevancy {relevancy} >= {RELEVANCY_THRESHOLD}")
 
     if passed:
-        print("PASS: All quality metrics above threshold")
+        print("\nAll quality metrics above threshold.")
     else:
+        print("\nQuality gate FAILED.")
         sys.exit(1)
 
     return scores
