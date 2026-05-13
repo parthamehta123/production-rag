@@ -39,11 +39,11 @@ Documents → Ingestion → Chunking (500-800 tokens, 100 overlap)
 ## Tech Stack
 
 - **Orchestration**: LangChain / LangGraph
-- **Vector Store**: ChromaDB
+- **Vector Store**: ChromaDB (via langchain-chroma)
 - **Keyword Search**: rank-bm25
 - **Reranking**: sentence-transformers cross-encoder
-- **Evaluation**: RAGAS
-- **LLM**: OpenAI GPT-4o / Anthropic Claude
+- **Evaluation**: RAGAS 0.3.x (Faithfulness, ResponseRelevancy, ContextPrecision)
+- **LLM**: OpenAI GPT-4o
 
 ## Setup
 
