@@ -1,82 +1,82 @@
 [
   {
     "question": "What are Apple's main product categories mentioned in their 10-K filing?",
-    "expected_answer": "Apple's main product categories include smartphones (iPhone), personal computers (Mac), tablets (iPad), wearables and accessories, and services."
+    "expected_answer": "Apple's main product categories are iPhone, Mac, iPad, Wearables Home and Accessories, and Services. iPhone had net sales of $209,586 million in 2025, Mac had $33,708 million, iPad had $28,023 million, and Wearables Home and Accessories had $35,686 million. Services net sales were $109,158 million."
   },
   {
     "question": "What competitive risks does Apple face according to their risk factors?",
-    "expected_answer": "Apple faces competition from companies with significant technical, marketing, distribution resources and established hardware, software, and service offerings. Competitors aggressively cut prices and lower product margins, and some can provide products at little or no profit. Apple has a minority market share in global smartphone, personal computer, tablet and wearables markets."
+    "expected_answer": "Apple must successfully manage frequent introductions and transitions of products and services to remain competitive and stimulate customer demand. Failure to do so could materially adversely affect its business, reputation, results of operations, financial condition, and stock price. The company faces substantial competition from companies with significant technical, marketing, distribution and other resources."
   },
   {
     "question": "How does Apple describe the seasonality of its business?",
-    "expected_answer": "Apple's business is subject to seasonal fluctuations, with product introductions and holiday seasons affecting sales patterns throughout the fiscal year."
+    "expected_answer": "Apple experiences higher net sales in its first fiscal quarter compared to other quarters, attributed in part to seasonal holiday demand. The timing of new product and service introductions can significantly impact net sales, cost of sales, and operating expenses."
   },
   {
     "question": "What factors affect Apple's gross margins according to the 10-K?",
-    "expected_answer": "Apple's gross margins are affected by industry-wide pricing pressures, increased competition, compressed product life cycles, supply shortages, component cost increases, shifts in product/geographic/channel mix, foreign exchange rate fluctuations, inflation, tariffs and trade restrictions, and the introduction of new products with lower profit margins."
-  },
-  {
-    "question": "What cybersecurity governance does Apple describe in their 10-K?",
-    "expected_answer": "Apple's cybersecurity governance involves the Head of Corporate Information Security, General Counsel, and the Heads of Compliance and Business Conduct, Business Assurance, and Internal Audit, who receive updates regarding cybersecurity incidents as necessary."
-  },
-  {
-    "question": "What workforce risks does Apple identify in their annual report?",
-    "expected_answer": "Apple identifies risks related to intense competition for talent especially in Silicon Valley, the need to retain key personnel including the CEO and executive team, immigration and labor law impacts on recruiting, and the challenge of managing evolving workforce dynamics and regulatory requirements."
-  },
-  {
-    "question": "What is Microsoft's primary business according to their 10-K filing?",
-    "expected_answer": "Microsoft is a technology company that develops and supports software, services, devices, and solutions including productivity and business processes, intelligent cloud, and personal computing segments."
-  },
-  {
-    "question": "What are the key risk factors Tesla identifies related to production?",
-    "expected_answer": "Tesla identifies risks related to manufacturing complexity, supply chain dependencies, scaling production capacity, quality control challenges, and the ability to meet delivery targets for its electric vehicles."
-  },
-  {
-    "question": "How does JPMorgan Chase describe its business segments?",
-    "expected_answer": "JPMorgan Chase operates through multiple business segments including Consumer & Community Banking, Corporate & Investment Bank, Commercial Banking, and Asset & Wealth Management."
-  },
-  {
-    "question": "What regulatory risks does Goldman Sachs identify in their 10-K?",
-    "expected_answer": "Goldman Sachs identifies regulatory risks including compliance with banking regulations, capital requirements, trading restrictions, anti-money laundering requirements, and the impact of evolving financial regulations across global jurisdictions."
+    "expected_answer": "Apple's gross margins are affected by foreign currency fluctuations, product and service mix across geographic segments and distribution channels, macroeconomic conditions including inflation and interest rates, and concentration of net sales from a single product category. Services gross margin was 75.4% versus 36.8% for products in 2025."
   },
   {
     "question": "What does Apple say about tariffs and trade restrictions in their risk factors?",
-    "expected_answer": "Apple identifies the imposition of new or increased tariffs and other trade restrictions, their overall magnitude and duration, and retaliatory actions as factors that could have a materially adverse impact on the Company's results of operations, financial condition and stock price."
-  },
-  {
-    "question": "How does Apple describe competition in the smartphone market?",
-    "expected_answer": "Apple states it has a minority market share in the global smartphone market. Competition is characterized by aggressive price competition, downward pressure on gross margins, frequent introduction of new products, and competitors imitating Apple's product features and applications."
-  },
-  {
-    "question": "What legal and regulatory changes has Apple implemented for the App Store?",
-    "expected_answer": "Apple has implemented changes to how developers communicate with consumers within apps on the U.S. storefront of the iOS and iPadOS App Store regarding alternative purchasing mechanisms, and is subject to a court order preventing it from imposing certain commissions or fees on purchases. Globally, Apple has implemented changes to iOS, iPadOS, the App Store and Safari in response to competition-related laws."
+    "expected_answer": "Restrictions on international trade such as tariffs and other controls on imports or exports of goods, technology, or data can materially adversely affect Apple's business and supply chain. These measures are particularly significant if they apply to countries and regions where Apple derives a significant portion of its revenues or has significant supply chain operations."
   },
   {
     "question": "What forward-looking statement disclaimers does Apple include?",
-    "expected_answer": "Apple states that forward-looking statements provide current expectations of future events based on certain assumptions, are not guarantees of future performance, and actual results may differ significantly. The Company assumes no obligation to update forward-looking statements except as required by law."
+    "expected_answer": "Apple states that forward-looking statements provide current expectations of future events based on certain assumptions and are not guarantees of future performance. Actual results may differ significantly from those discussed. The Company assumes no obligation to revise or update any forward-looking statements except as required by law."
   },
   {
     "question": "What are the main sources of Apple's revenue?",
-    "expected_answer": "Apple generates revenue from products (including iPhone, Mac, iPad, wearables and accessories) and services. A significant portion of net sales comes from a single product category."
-  },
-  {
-    "question": "What does the Tesla 10-K say about their energy business?",
-    "expected_answer": "Tesla's energy business includes energy generation and storage products such as solar panels, Solar Roof, and battery energy storage systems like Powerwall and Megapack."
-  },
-  {
-    "question": "How does JPMorgan describe credit risk management?",
-    "expected_answer": "JPMorgan manages credit risk through its risk management framework, which includes credit analysis, portfolio management, monitoring of credit exposures, and maintaining appropriate reserves for credit losses."
-  },
-  {
-    "question": "What investment banking activities does Goldman Sachs describe?",
-    "expected_answer": "Goldman Sachs describes investment banking activities including financial advisory services for mergers and acquisitions, divestitures, restructurings, and underwriting services for equity and debt offerings."
-  },
-  {
-    "question": "What does Microsoft say about cloud computing competition?",
-    "expected_answer": "Microsoft faces intense competition in cloud computing from major providers. The intelligent cloud segment, including Azure, competes on factors such as performance, reliability, security, breadth of services, and pricing."
+    "expected_answer": "Apple's revenue comes from Products and Services segments. Products include iPhone, Mac, iPad, and Wearables Home and Accessories with total product net sales of $307,003 million. Services net sales were $109,158 million, with increases driven by advertising, the App Store, and cloud services. Total net sales for fiscal year 2025 were $416,161 million."
   },
   {
     "question": "What is the total revenue Apple reported for the most recent fiscal year?",
-    "expected_answer": "Apple's total net sales for fiscal year 2025 are reported in the consolidated statements of operations in their 10-K filing."
+    "expected_answer": "Apple reported total net sales of $416,161 million for the fiscal year ended September 27, 2025. This includes $307,003 million from products and $109,158 million from services."
+  },
+  {
+    "question": "What legal and regulatory changes has Apple implemented for the App Store?",
+    "expected_answer": "Apple has made changes to iOS, iPadOS, and the App Store in response to competition-related laws and regulations adopted by various jurisdictions globally. These changes are part of the company's efforts to comply with wide-ranging obligations imposed on technology companies."
+  },
+  {
+    "question": "What are Tesla's main business segments and products?",
+    "expected_answer": "Tesla's automotive segment includes design, development, manufacturing, sales and leasing of high-performance fully electric vehicles, sales of automotive regulatory credits, and services including used vehicles, non-warranty maintenance, collision, paid Supercharging, automotive insurance, and part sales. Tesla sells vehicles through its website and a global network of company-owned stores."
+  },
+  {
+    "question": "What are the key risk factors Tesla identifies related to production?",
+    "expected_answer": "Tesla may experience issues or delays in developing, launching, and ramping up the production of their products, services, and features. They may face challenges in controlling manufacturing costs, which could impact their ability to grow the business."
+  },
+  {
+    "question": "How does Tesla describe competition in EVs?",
+    "expected_answer": "The worldwide automotive market is highly competitive and Tesla expects it will become even more competitive as a significant and growing number of established and new automobile manufacturers enter the electric vehicle market. Competing products typically include internal combustion vehicles from more established manufacturers, though many have entered or announced plans to enter the electric and alternative fuel vehicle market."
+  },
+  {
+    "question": "What is Microsoft's primary business according to their 10-K filing?",
+    "expected_answer": "Microsoft is a technology company committed to making digital technology and artificial intelligence available broadly and doing so responsibly. Their mission is to empower every person and every organization on the planet to achieve more."
+  },
+  {
+    "question": "What does Microsoft say about cloud computing competition?",
+    "expected_answer": "Microsoft acknowledges that cloud computing competition involves a variety of business models and that both they and their competitors are investing significant resources into developing and deploying cloud-based strategies. The Microsoft Cloud provides integration across the technology stack, offering openness, improving time to value, reducing costs, and increasing agility."
+  },
+  {
+    "question": "What regulatory risks does Goldman Sachs identify in their 10-K?",
+    "expected_answer": "Goldman Sachs' asset management and wealth management businesses are subject to extensive oversight by regulators globally. Their business, results of operations, and financial condition could be adversely impacted by unfavorable results of legal proceedings or government investigations. Federal securities laws impose fiduciary duties on investment advisers."
+  },
+  {
+    "question": "What investment banking activities does Goldman Sachs describe?",
+    "expected_answer": "Goldman Sachs describes investment banking activities as part of its Global Banking and Markets business segment. These activities generate revenues from investment banking fees, including advisory services and equity and debt underwriting fees."
+  },
+  {
+    "question": "What regulatory risks does JPMorgan Chase face?",
+    "expected_answer": "JPMorgan Chase's ability to distribute capital to shareholders or support business activities could be limited if it does not satisfy applicable regulatory capital requirements. The company is subject to extensive supervision and regulation, and changes in the application, interpretation, or enforcement of applicable laws can pose risks. Differences in regulatory implementation across jurisdictions could negatively impact business."
+  },
+  {
+    "question": "How does JPMorgan describe credit risk management?",
+    "expected_answer": "JPMorgan Chase mitigates the risk of nonperformance by its clients in clearing services activities by requiring clients to provide adequate collateral. This is a proactive measure to manage credit risk associated with client transactions."
+  },
+  {
+    "question": "How is JPMorgan Chase structured as a financial holding company?",
+    "expected_answer": "JPMorgan Chase & Co. is a bank holding company and a financial holding company under U.S. federal law, subject to comprehensive consolidated supervision, regulation and examination by the Board of Governors of the Federal Reserve System. It is a holding company that holds the stock of JPMorgan Chase Bank, N.A. and an intermediate holding company, JPMorgan Chase Holdings LLC. As of December 31, 2025, JPMorgan Chase had $4.4 trillion in assets and $362.4 billion in stockholders' equity."
+  },
+  {
+    "question": "What does Microsoft say about AI in their annual report?",
+    "expected_answer": "AI is fundamentally transforming productivity for every individual, organization, and industry. Microsoft's AI offerings span every layer of the technology stack, enabling transformative outcomes across sectors. Microsoft is building AI into many of its offerings including productivity services and making AI available for customers to use in their own solutions, which may be developed by Microsoft or through partnerships such as with OpenAI."
   }
 ]
