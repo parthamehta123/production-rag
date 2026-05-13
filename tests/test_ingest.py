@@ -1,7 +1,5 @@
 """Tests for document ingestion pipeline."""
 
-from unittest.mock import MagicMock
-
 from langchain_core.documents import Document
 
 from src.ingest import chunk_documents

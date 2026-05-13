@@ -1,7 +1,5 @@
 """Tests for query pipeline."""
 
-from unittest.mock import MagicMock, patch
-
 from src.query import format_context, load_prompts
 
 
