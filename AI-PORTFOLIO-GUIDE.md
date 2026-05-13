@@ -132,6 +132,7 @@ cd ~/production-rag
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+pip install -e .
 cp .env.example .env
 # Edit .env → add your OPENAI_API_KEY
 
@@ -183,6 +184,7 @@ cd ~/local-slm-benchmark
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+pip install -e .
 
 # Pull models with Ollama
 ollama pull llama3.2:3b
@@ -237,6 +239,7 @@ cd ~/rag-observability
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+pip install -e .
 cp .env.example .env
 
 # Option A: Use Langfuse Cloud (easiest)
@@ -287,6 +290,7 @@ cd ~/fine-tuning-lora-dpo
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+pip install -e .
 
 # Step 1: Prepare the local training data
 python src/prepare_data.py
@@ -346,6 +350,7 @@ cd ~/realtime-voice-assistant
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+pip install -e .
 cp .env.example .env
 # Edit .env → add OPENAI_API_KEY, DEEPGRAM_API_KEY, ELEVENLABS_API_KEY
 

@@ -51,6 +51,7 @@ Documents → Ingestion → Chunking (500-800 tokens, 100 overlap)
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+pip install -e .
 cp .env.example .env  # Add your API keys
 ```
 
