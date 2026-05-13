@@ -2,7 +2,6 @@
 
 import json
 import sys
-from pathlib import Path
 
 from datasets import Dataset
 from dotenv import load_dotenv
@@ -24,7 +23,9 @@ def load_golden_dataset(path: str = "eval/golden_dataset.json") -> list[dict]:
         return json.load(f)
 
 
-def run_evaluation(persist_dir: str = "./data/chroma", dataset_path: str = "eval/golden_dataset.json"):
+def run_evaluation(
+    persist_dir: str = "./data/chroma", dataset_path: str = "eval/golden_dataset.json"
+):
     """Run evaluation against golden dataset and check quality thresholds."""
     golden = load_golden_dataset(dataset_path)
     prompts = load_prompts()
@@ -42,14 +43,18 @@ def run_evaluation(persist_dir: str = "./data/chroma", dataset_path: str = "eval
         contexts.append([s["content"] for s in result["sources"]])
         ground_truths.append(item["expected_answer"])
 
-    dataset = Dataset.from_dict({
-        "question": questions,
-        "answer": answers,
-        "contexts": contexts,
-        "ground_truth": ground_truths,
-    })
+    dataset = Dataset.from_dict(
+        {
+            "question": questions,
+            "answer": answers,
+            "contexts": contexts,
+            "ground_truth": ground_truths,
+        }
+    )
 
-    results = evaluate(dataset, metrics=[faithfulness, answer_relevancy, context_precision])
+    results = evaluate(
+        dataset, metrics=[faithfulness, answer_relevancy, context_precision]
+    )
     scores = {k: round(v, 4) for k, v in results.items()}
 
     print("Evaluation Results:")

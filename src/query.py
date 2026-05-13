@@ -62,7 +62,11 @@ def generate_answer(query: str, retriever: HybridRetriever, prompts: dict) -> di
     return {
         "answer": answer,
         "sources": [
-            {"source_id": c["source_id"], "content": c["content"][:200], "metadata": c["metadata"]}
+            {
+                "source_id": c["source_id"],
+                "content": c["content"][:200],
+                "metadata": c["metadata"],
+            }
             for c in chunks
         ],
         "query": query,

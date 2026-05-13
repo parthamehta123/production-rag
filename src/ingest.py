@@ -1,7 +1,6 @@
 """Document ingestion pipeline: load, chunk, embed, and store documents."""
 
 import argparse
-from pathlib import Path
 
 from dotenv import load_dotenv
 from langchain_community.document_loaders import (
@@ -22,6 +21,7 @@ LOADERS = {
     "*.md": UnstructuredMarkdownLoader,
 }
 
+
 def load_documents(docs_dir: str) -> list:
     """Load documents from a directory supporting PDF, TXT, and MD files."""
     all_docs = []
@@ -37,7 +37,9 @@ def load_documents(docs_dir: str) -> list:
     return all_docs
 
 
-def chunk_documents(documents: list, chunk_size: int = 600, chunk_overlap: int = 100) -> list:
+def chunk_documents(
+    documents: list, chunk_size: int = 600, chunk_overlap: int = 100
+) -> list:
     """Split documents into chunks with overlap to preserve context at boundaries."""
     splitter = RecursiveCharacterTextSplitter(
         chunk_size=chunk_size,
@@ -46,7 +48,9 @@ def chunk_documents(documents: list, chunk_size: int = 600, chunk_overlap: int =
         separators=["\n\n", "\n", ". ", " ", ""],
     )
     chunks = splitter.split_documents(documents)
-    print(f"Split into {len(chunks)} chunks (size={chunk_size}, overlap={chunk_overlap})")
+    print(
+        f"Split into {len(chunks)} chunks (size={chunk_size}, overlap={chunk_overlap})"
+    )
     return chunks
 
 
