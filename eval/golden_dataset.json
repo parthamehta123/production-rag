@@ -1,10 +1,82 @@
 [
   {
-    "question": "What is the return policy?",
-    "expected_answer": "The return policy allows returns within 30 days of purchase with a valid receipt."
+    "question": "What are Apple's main product categories mentioned in their 10-K filing?",
+    "expected_answer": "Apple's main product categories include smartphones (iPhone), personal computers (Mac), tablets (iPad), wearables and accessories, and services."
   },
   {
-    "question": "How do I reset my password?",
-    "expected_answer": "You can reset your password by clicking the 'Forgot Password' link on the login page."
+    "question": "What competitive risks does Apple face according to their risk factors?",
+    "expected_answer": "Apple faces competition from companies with significant technical, marketing, distribution resources and established hardware, software, and service offerings. Competitors aggressively cut prices and lower product margins, and some can provide products at little or no profit. Apple has a minority market share in global smartphone, personal computer, tablet and wearables markets."
+  },
+  {
+    "question": "How does Apple describe the seasonality of its business?",
+    "expected_answer": "Apple's business is subject to seasonal fluctuations, with product introductions and holiday seasons affecting sales patterns throughout the fiscal year."
+  },
+  {
+    "question": "What factors affect Apple's gross margins according to the 10-K?",
+    "expected_answer": "Apple's gross margins are affected by industry-wide pricing pressures, increased competition, compressed product life cycles, supply shortages, component cost increases, shifts in product/geographic/channel mix, foreign exchange rate fluctuations, inflation, tariffs and trade restrictions, and the introduction of new products with lower profit margins."
+  },
+  {
+    "question": "What cybersecurity governance does Apple describe in their 10-K?",
+    "expected_answer": "Apple's cybersecurity governance involves the Head of Corporate Information Security, General Counsel, and the Heads of Compliance and Business Conduct, Business Assurance, and Internal Audit, who receive updates regarding cybersecurity incidents as necessary."
+  },
+  {
+    "question": "What workforce risks does Apple identify in their annual report?",
+    "expected_answer": "Apple identifies risks related to intense competition for talent especially in Silicon Valley, the need to retain key personnel including the CEO and executive team, immigration and labor law impacts on recruiting, and the challenge of managing evolving workforce dynamics and regulatory requirements."
+  },
+  {
+    "question": "What is Microsoft's primary business according to their 10-K filing?",
+    "expected_answer": "Microsoft is a technology company that develops and supports software, services, devices, and solutions including productivity and business processes, intelligent cloud, and personal computing segments."
+  },
+  {
+    "question": "What are the key risk factors Tesla identifies related to production?",
+    "expected_answer": "Tesla identifies risks related to manufacturing complexity, supply chain dependencies, scaling production capacity, quality control challenges, and the ability to meet delivery targets for its electric vehicles."
+  },
+  {
+    "question": "How does JPMorgan Chase describe its business segments?",
+    "expected_answer": "JPMorgan Chase operates through multiple business segments including Consumer & Community Banking, Corporate & Investment Bank, Commercial Banking, and Asset & Wealth Management."
+  },
+  {
+    "question": "What regulatory risks does Goldman Sachs identify in their 10-K?",
+    "expected_answer": "Goldman Sachs identifies regulatory risks including compliance with banking regulations, capital requirements, trading restrictions, anti-money laundering requirements, and the impact of evolving financial regulations across global jurisdictions."
+  },
+  {
+    "question": "What does Apple say about tariffs and trade restrictions in their risk factors?",
+    "expected_answer": "Apple identifies the imposition of new or increased tariffs and other trade restrictions, their overall magnitude and duration, and retaliatory actions as factors that could have a materially adverse impact on the Company's results of operations, financial condition and stock price."
+  },
+  {
+    "question": "How does Apple describe competition in the smartphone market?",
+    "expected_answer": "Apple states it has a minority market share in the global smartphone market. Competition is characterized by aggressive price competition, downward pressure on gross margins, frequent introduction of new products, and competitors imitating Apple's product features and applications."
+  },
+  {
+    "question": "What legal and regulatory changes has Apple implemented for the App Store?",
+    "expected_answer": "Apple has implemented changes to how developers communicate with consumers within apps on the U.S. storefront of the iOS and iPadOS App Store regarding alternative purchasing mechanisms, and is subject to a court order preventing it from imposing certain commissions or fees on purchases. Globally, Apple has implemented changes to iOS, iPadOS, the App Store and Safari in response to competition-related laws."
+  },
+  {
+    "question": "What forward-looking statement disclaimers does Apple include?",
+    "expected_answer": "Apple states that forward-looking statements provide current expectations of future events based on certain assumptions, are not guarantees of future performance, and actual results may differ significantly. The Company assumes no obligation to update forward-looking statements except as required by law."
+  },
+  {
+    "question": "What are the main sources of Apple's revenue?",
+    "expected_answer": "Apple generates revenue from products (including iPhone, Mac, iPad, wearables and accessories) and services. A significant portion of net sales comes from a single product category."
+  },
+  {
+    "question": "What does the Tesla 10-K say about their energy business?",
+    "expected_answer": "Tesla's energy business includes energy generation and storage products such as solar panels, Solar Roof, and battery energy storage systems like Powerwall and Megapack."
+  },
+  {
+    "question": "How does JPMorgan describe credit risk management?",
+    "expected_answer": "JPMorgan manages credit risk through its risk management framework, which includes credit analysis, portfolio management, monitoring of credit exposures, and maintaining appropriate reserves for credit losses."
+  },
+  {
+    "question": "What investment banking activities does Goldman Sachs describe?",
+    "expected_answer": "Goldman Sachs describes investment banking activities including financial advisory services for mergers and acquisitions, divestitures, restructurings, and underwriting services for equity and debt offerings."
+  },
+  {
+    "question": "What does Microsoft say about cloud computing competition?",
+    "expected_answer": "Microsoft faces intense competition in cloud computing from major providers. The intelligent cloud segment, including Azure, competes on factors such as performance, reliability, security, breadth of services, and pricing."
+  },
+  {
+    "question": "What is the total revenue Apple reported for the most recent fiscal year?",
+    "expected_answer": "Apple's total net sales for fiscal year 2025 are reported in the consolidated statements of operations in their 10-K filing."
   }
 ]

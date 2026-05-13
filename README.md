@@ -1,6 +1,20 @@
 # Production RAG Application
 
-A production-grade Retrieval Augmented Generation system with hybrid retrieval, cross-encoder reranking, citation enforcement, and CI-gated evaluation.
+A production-grade Retrieval Augmented Generation system for **SEC 10-K financial filings** with hybrid retrieval, cross-encoder reranking, citation enforcement, and CI-gated evaluation.
+
+## Dataset
+
+Real SEC 10-K annual filings from 5 major companies, sourced from [SEC EDGAR](https://www.sec.gov/edgar):
+
+| Company | Ticker | Filing |
+|---------|--------|--------|
+| Apple Inc. | AAPL | 10-K FY2025 |
+| Microsoft Corporation | MSFT | 10-K FY2025 |
+| Tesla, Inc. | TSLA | 10-K FY2025 |
+| JPMorgan Chase & Co. | JPM | 10-K FY2025 |
+| The Goldman Sachs Group | GS | 10-K FY2025 |
+
+Golden evaluation dataset: 20 finance-specific QA pairs verified against the source filings.
 
 ## Features
 
