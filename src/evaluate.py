@@ -19,7 +19,9 @@ from src.retriever import HybridRetriever
 load_dotenv()
 
 FAITHFULNESS_THRESHOLD = 0.3
-RELEVANCY_THRESHOLD = 0.0  # ResponseRelevancy requires embeddings; set to 0 until configured
+RELEVANCY_THRESHOLD = (
+    0.0  # ResponseRelevancy requires embeddings; set to 0 until configured
+)
 
 
 def load_golden_dataset(path: str = "eval/golden_dataset.json") -> list[dict]:
