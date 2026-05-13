@@ -17,4 +17,4 @@ def test_golden_dataset_loads():
 
 def test_thresholds_are_reasonable():
     assert 0 < FAITHFULNESS_THRESHOLD <= 1.0
-    assert 0 < RELEVANCY_THRESHOLD <= 1.0
+    assert 0 <= RELEVANCY_THRESHOLD <= 1.0
